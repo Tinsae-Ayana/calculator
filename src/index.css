@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+   /* theme one */
+
+   .themeOneMainBg {
+      @apply bg-vblueMainBg w-screen h-screen flex justify-center items-center;
+   }
+
+   .themeOneOutputBg {
+      @apply bg-vblueScreenBg text-proWhite text-output font-spartan px-5 basis-[20%] rounded-xl flex justify-end items-center;
+   }
+
+   .themeOneCalBg {
+      @apply bg-vbluekeypadBg  basis-[65%] rounded-xl grid grid-cols-4 gap-4 p-6;
+   }
+
+   .themeOnekey {
+      @apply cursor-pointer rounded-md bg-lightGrayOrange shadow-themeOne flex justify-center items-center 
+      text-darkGrayishBlue text-size font-spartan font-bold;
+   }
+
+   .themeOneDelete {
+      @apply cursor-pointer rounded-md bg-blueKeybg shadow-themeOneE flex justify-center items-center 
+     text-proWhite text-size font-spartan font-bold;
+   }
+
+   .themeOneReset {
+      @apply cursor-pointer rounded-md bg-blueKeybg shadow-themeOneE flex justify-center items-center 
+     text-proWhite text-size font-spartan font-bold col-span-2;
+   }
+
+   .themeOneEqual {
+      @apply cursor-pointer rounded-md bg-proRed shadow-themeOneD flex justify-center items-center 
+    text-proWhite text-size font-spartan font-bold col-span-2;
+   }
+
+   .themeOneTextH1 {
+      @apply text-size text-proWhite font-bold font-spartan;
+   }
+   .themeOneTextH2 {
+      @apply font-spartan font-bold text-[12px] text-proWhite;
+   }
+
+   .themeOneToggle {
+      @apply h-6 bg-vbluekeypadBg rounded-3xl w-20 flex justify-between items-center relative;
+   }
+
+   .themeOneRadio {
+      @apply h-5 w-5 bg-proRed rounded-full absolute left-0;
+   }
+
+   /* theme two */
+
+   .themeTwoMainBg {
+      @apply bg-lightGray w-screen h-screen flex justify-center items-center;
+   }
+
+   .themeTwoOutputBg {
+      @apply bg-veryLightGray text-veryDarkgrayishYellow text-output font-spartan px-5 basis-[20%] rounded-xl flex justify-end items-center;
+   }
+
+   .themeTwoCalBg {
+      @apply bg-grayishRed  basis-[65%] rounded-xl grid grid-cols-4 gap-4 p-6;
+   }
+
+   .themeTwokey {
+      @apply cursor-pointer rounded-md bg-lightGrayishYellow shadow-themeTwo flex justify-center items-center 
+    text-veryDarkgrayishYellow text-size font-spartan font-bold;
+   }
+
+   .themeTwoDelete {
+      @apply cursor-pointer rounded-md bg-darkModerateCyan shadow-themeTwoD flex justify-center items-center 
+      text-proWhite text-size font-spartan font-bold;
+   }
+   .themeTwoReset {
+      @apply cursor-pointer rounded-md bg-darkModerateCyan shadow-themeTwoD flex justify-center items-center 
+    text-proWhite text-size font-spartan font-bold col-span-2;
+   }
+
+   .themeTwoEqual {
+      @apply cursor-pointer rounded-md bg-orangeKey shadow-themeTwoE flex justify-center items-center 
+      text-proWhite text-size font-spartan font-bold col-span-2;
+   }
+
+   .themeTwoTextH1 {
+      @apply text-size text-veryDarkgrayishYellow font-bold font-spartan;
+   }
+
+   .themeTwoTextH2 {
+      @apply font-spartan font-bold text-[12px] text-veryDarkgrayishYellow;
+   }
+
+   .themeTwoToggle {
+      @apply h-6 bg-grayishRed rounded-3xl w-20 flex justify-between items-center relative;
+   }
+
+   .themeTwoRadio {
+      @apply h-5 w-5 bg-orangeKey rounded-full absolute left-[35%];
+   }
+
+   /* theme three */
+
+   .themeThreeMainBg {
+      @apply bg-veryDarkViolet w-screen h-screen flex justify-center items-center;
+   }
+   .themeThreeOutputBg {
+      @apply bg-veryDarkVioletscreen text-lightYellow text-output font-spartan px-5 basis-[20%] rounded-xl flex justify-end items-center;
+   }
+
+   .themeThreeCalBg {
+      @apply bg-veryDarkVioletscreen  basis-[65%] rounded-xl grid grid-cols-4 gap-4 p-6;
+   }
+
+   .themeThreekey {
+      @apply cursor-pointer rounded-md bg-veryDarkViolet shadow-themeThree flex justify-center items-center 
+    text-lightYellow text-size font-spartan font-bold;
+   }
+
+   .themeThreeDelete {
+      @apply cursor-pointer rounded-md bg-darkViolet shadow-themeThreeD flex justify-center items-center 
+      text-proWhite text-size font-spartan font-bold;
+   }
+
+   .themeThreeReset {
+      @apply cursor-pointer rounded-md bg-darkViolet shadow-themeThreeD flex justify-center items-center 
+    text-proWhite text-size font-spartan font-bold col-span-2;
+   }
+
+   .themeThreeEqual {
+      @apply cursor-pointer rounded-md bg-pureCyan shadow-themeThreeE flex justify-center items-center 
+      text-veryDarkBlue text-size font-spartan font-bold col-span-2;
+   }
+
+   .themeThreeTextH1 {
+      @apply text-size text-lightYellow font-bold font-spartan;
+   }
+   .themeThreeTextH2 {
+      @apply font-spartan font-bold text-[12px] text-lightYellow;
+   }
+
+   .themeThreeToggle {
+      @apply h-6 bg-veryDarkVioletscreen rounded-3xl w-20 flex justify-between items-center relative;
+   }
+
+   .themeThreeRadio {
+      @apply h-5 w-5 bg-pureCyan rounded-full absolute right-0;
+   }
+}
