@@ -90,9 +90,7 @@ export default function App() {
                      ? "themeTwoOutputBg"
                      : "themeThreeOutputBg"
                }
-            >
-               555221222
-            </div>
+            ></div>
             <div
                className={
                   theme == 1 ? "themeOneCalBg" : theme == 2 ? "themeTwoCalBg" : "themeThreeCalBg"
