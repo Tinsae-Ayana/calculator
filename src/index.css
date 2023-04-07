@@ -11,7 +11,7 @@
    }
 
    .themeOneOutputBg {
-      @apply bg-vblueScreenBg text-proWhite text-output font-spartan px-5 basis-[20%] rounded-xl flex justify-end items-center;
+      @apply bg-vblueScreenBg text-proWhite text-output font-spartan px-5 basis-[20%] rounded-xl flex justify-end items-center overflow-auto scrollbar-none;
    }
 
    .themeOneCalBg {
@@ -60,7 +60,7 @@
    }
 
    .themeTwoOutputBg {
-      @apply bg-veryLightGray text-veryDarkgrayishYellow text-output font-spartan px-5 basis-[20%] rounded-xl flex justify-end items-center;
+      @apply bg-veryLightGray text-veryDarkgrayishYellow text-output font-spartan px-5 basis-[20%] rounded-xl flex justify-end items-center overflow-auto scrollbar-none;
    }
 
    .themeTwoCalBg {
@@ -108,7 +108,7 @@
       @apply bg-veryDarkViolet w-screen h-screen flex justify-center items-center;
    }
    .themeThreeOutputBg {
-      @apply bg-veryDarkVioletscreen text-lightYellow text-output font-spartan px-5 basis-[20%] rounded-xl flex justify-end items-center;
+      @apply bg-veryDarkVioletscreen text-lightYellow text-output font-spartan px-5 basis-[20%] rounded-xl flex justify-end items-center overflow-auto scrollbar-none;
    }
 
    .themeThreeCalBg {
