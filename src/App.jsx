@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { DeleteKey, NumberKey, ResetKey, EqualKey, ArthOpeKey } from "./keyEventHandler";
 
 export default function App() {
    const [theme, setTheme] = useState(1);
+   const [opeList, setopeList] = useState([]);
    const ChangeTheme = () => {
       if (theme == 3) {
          setTheme(1);
@@ -80,6 +82,7 @@ export default function App() {
                </div>
             </div>
             <div
+               id='screen'
                className={
                   theme == 1
                      ? "themeOneOutputBg"
@@ -88,7 +91,7 @@ export default function App() {
                      : "themeThreeOutputBg"
                }
             >
-               838484
+               555221222
             </div>
             <div
                className={
@@ -99,6 +102,7 @@ export default function App() {
                   className={
                      theme == 1 ? "themeOnekey" : theme == 2 ? "themeTwokey" : "themeThreekey"
                   }
+                  onClick={(e) => NumberKey(e)}
                >
                   7
                </div>
@@ -106,6 +110,7 @@ export default function App() {
                   className={
                      theme == 1 ? "themeOnekey" : theme == 2 ? "themeTwokey" : "themeThreekey"
                   }
+                  onClick={(e) => NumberKey(e)}
                >
                   8
                </div>
@@ -113,6 +118,7 @@ export default function App() {
                   className={
                      theme == 1 ? "themeOnekey" : theme == 2 ? "themeTwokey" : "themeThreekey"
                   }
+                  onClick={(e) => NumberKey(e)}
                >
                   9
                </div>
@@ -124,6 +130,7 @@ export default function App() {
                         ? "themeTwoDelete"
                         : "themeThreeDelete"
                   }
+                  onClick={() => DeleteKey()}
                >
                   DEL
                </div>
@@ -131,6 +138,7 @@ export default function App() {
                   className={
                      theme == 1 ? "themeOnekey" : theme == 2 ? "themeTwokey" : "themeThreekey"
                   }
+                  onClick={(e) => NumberKey(e)}
                >
                   4
                </div>
@@ -138,6 +146,7 @@ export default function App() {
                   className={
                      theme == 1 ? "themeOnekey" : theme == 2 ? "themeTwokey" : "themeThreekey"
                   }
+                  onClick={(e) => NumberKey(e)}
                >
                   5
                </div>
@@ -145,6 +154,7 @@ export default function App() {
                   className={
                      theme == 1 ? "themeOnekey" : theme == 2 ? "themeTwokey" : "themeThreekey"
                   }
+                  onClick={(e) => NumberKey(e)}
                >
                   6
                </div>
@@ -152,6 +162,7 @@ export default function App() {
                   className={
                      theme == 1 ? "themeOnekey" : theme == 2 ? "themeTwokey" : "themeThreekey"
                   }
+                  onClick={(e) => ArthOpeKey(e, setopeList)}
                >
                   +
                </div>
@@ -159,6 +170,7 @@ export default function App() {
                   className={
                      theme == 1 ? "themeOnekey" : theme == 2 ? "themeTwokey" : "themeThreekey"
                   }
+                  onClick={(e) => NumberKey(e)}
                >
                   1
                </div>
@@ -166,6 +178,7 @@ export default function App() {
                   className={
                      theme == 1 ? "themeOnekey" : theme == 2 ? "themeTwokey" : "themeThreekey"
                   }
+                  onClick={(e) => NumberKey(e)}
                >
                   2
                </div>
@@ -173,6 +186,7 @@ export default function App() {
                   className={
                      theme == 1 ? "themeOnekey" : theme == 2 ? "themeTwokey" : "themeThreekey"
                   }
+                  onClick={(e) => NumberKey(e)}
                >
                   3
                </div>
@@ -180,6 +194,7 @@ export default function App() {
                   className={
                      theme == 1 ? "themeOnekey" : theme == 2 ? "themeTwokey" : "themeThreekey"
                   }
+                  onClick={(e) => ArthOpeKey(e, setopeList)}
                >
                   -
                </div>
@@ -187,6 +202,7 @@ export default function App() {
                   className={
                      theme == 1 ? "themeOnekey" : theme == 2 ? "themeTwokey" : "themeThreekey"
                   }
+                  onClick={(e) => NumberKey(e)}
                >
                   .
                </div>
@@ -194,6 +210,7 @@ export default function App() {
                   className={
                      theme == 1 ? "themeOnekey" : theme == 2 ? "themeTwokey" : "themeThreekey"
                   }
+                  onClick={(e) => NumberKey(e)}
                >
                   0
                </div>
@@ -201,6 +218,7 @@ export default function App() {
                   className={
                      theme == 1 ? "themeOnekey" : theme == 2 ? "themeTwokey" : "themeThreekey"
                   }
+                  onClick={(e) => ArthOpeKey(e, setopeList)}
                >
                   /
                </div>
@@ -208,6 +226,7 @@ export default function App() {
                   className={
                      theme == 1 ? "themeOnekey" : theme == 2 ? "themeTwokey" : "themeThreekey"
                   }
+                  onClick={(e) => ArthOpeKey(e, setopeList)}
                >
                   x
                </div>
@@ -215,6 +234,7 @@ export default function App() {
                   className={
                      theme == 1 ? "themeOneReset" : theme == 2 ? "themeTwoReset" : "themeThreeReset"
                   }
+                  onClick={() => ResetKey(setopeList)}
                >
                   RESET
                </div>
@@ -222,6 +242,7 @@ export default function App() {
                   className={
                      theme == 1 ? "themeOneEqual" : theme == 2 ? "themeTwoEqual" : "themeThreeEqual"
                   }
+                  onClick={(e) => EqualKey(opeList, setopeList)}
                >
                   =
                </div>
